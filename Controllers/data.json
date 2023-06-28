@@ -1,0 +1,2396 @@
+{
+    "patate-douce": {
+        "semence": {
+            "min": 14,
+            "max": 28
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 21
+        }
+    },
+    "manioc": {
+        "semence": {
+            "min": 14,
+            "max": 28
+        },
+        "croissance": {
+            "min": 180,
+            "max": 360
+        },
+        "recolte": {
+            "min": 240,
+            "max": 420
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 30
+        }
+    },
+    "igname": {
+        "semence": {
+            "min": 30,
+            "max": 45
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "taro": {
+        "semence": {
+            "min": 30,
+            "max": 45
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "igname-d'eau": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 240,
+            "max": 360
+        },
+        "recolte": {
+            "min": 300,
+            "max": 450
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "pomme-de-terre": {
+        "semence": {
+            "min": 10,
+            "max": 20
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 100,
+            "max": 130
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "topinambour": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 90,
+            "max": 150
+        },
+        "recolte": {
+            "min": 120,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "sagou": {
+        "semence": {
+            "min": 30,
+            "max": 60
+        },
+        "croissance": {
+            "min": 360,
+            "max": 540
+        },
+        "recolte": {
+            "min": 540,
+            "max": 720
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 60
+        }
+    },
+    "dioscorea": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 180,
+            "max": 300
+        },
+        "recolte": {
+            "min": 240,
+            "max": 420
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 30
+        }
+    },
+    "lenocinium": {
+        "semence": {
+            "min": 14,
+            "max": 28
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "oxalis": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "tétragone": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 45,
+            "max": 60
+        },
+        "recolte": {
+            "min": 60,
+            "max": 90
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "ylang-ylang": {
+        "semence": {
+            "min": 30,
+            "max": 60
+        },
+        "croissance": {
+            "min": 720,
+            "max": 960
+        },
+        "recolte": {
+            "min": 1080,
+            "max": 1440
+        },
+        "conditionnement": {
+            "min": 60,
+            "max": 90
+        }
+    },
+    "curcuma": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 240,
+            "max": 300
+        },
+        "recolte": {
+            "min": 300,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "macabo": {
+        "semence": {
+            "min": 30,
+            "max": 45
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "pentaclethra": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 540,
+            "max": 720
+        },
+        "recolte": {
+            "min": 720,
+            "max": 900
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 45
+        }
+    },
+    "pachyme": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 90,
+            "max": 150
+        },
+        "recolte": {
+            "min": 120,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "pipéracée": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 120,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 30
+        }
+    },
+    "bambou": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 720,
+            "max": 1200
+        },
+        "recolte": {
+            "min": 1200,
+            "max": 1800
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 60
+        }
+    },
+    "amadouvier": {
+        "semence": {
+            "min": 30,
+            "max": 60
+        },
+        "croissance": {
+            "min": 90,
+            "max": 150
+        },
+        "recolte": {
+            "min": 120,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "bonduc": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 360,
+            "max": 540
+        },
+        "recolte": {
+            "min": 540,
+            "max": 720
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 45
+        }
+    },
+    "céleri-rave": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "dioscorea-hirsuta": {
+        "semence": {
+            "min": 30,
+            "max": 45
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "ginseng": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 1080,
+            "max": 1440
+        },
+        "recolte": {
+            "min": 1440,
+            "max": 2160
+        },
+        "conditionnement": {
+            "min": 60,
+            "max": 90
+        }
+    },
+    "héliotrope": {
+        "semence": {
+            "min": 14,
+            "max": 28
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "tubercule-d'eau": {
+        "semence": {
+            "min": 30,
+            "max": 60
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "piment": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "gingembre": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 210,
+            "max": 270
+        },
+        "recolte": {
+            "min": 270,
+            "max": 330
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "cumin": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "coriandre": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "fenugrec": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "poirot": {
+        "semence": {
+            "min": 10,
+            "max": 20
+        },
+        "croissance": {
+            "min": 70,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "paprika": {
+        "semence": {
+            "min": 120,
+            "max": 150
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "anis": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "cardamome": {
+        "semence": {
+            "min": 120,
+            "max": 150
+        },
+        "croissance": {
+            "min": 240,
+            "max": 300
+        },
+        "recolte": {
+            "min": 300,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "cannelle": {
+        "semence": {
+            "min": 180,
+            "max": 210
+        },
+        "croissance": {
+            "min": 240,
+            "max": 300
+        },
+        "recolte": {
+            "min": 300,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "girofle": {
+        "semence": {
+            "min": 180,
+            "max": 210
+        },
+        "croissance": {
+            "min": 360,
+            "max": 420
+        },
+        "recolte": {
+            "min": 420,
+            "max": 480
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 45
+        }
+    },
+    "poivre": {
+        "semence": {
+            "min": 180,
+            "max": 210
+        },
+        "croissance": {
+            "min": 300,
+            "max": 360
+        },
+        "recolte": {
+            "min": 360,
+            "max": 420
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "muscade": {
+        "semence": {
+            "min": 150,
+            "max": 180
+        },
+        "croissance": {
+            "min": 360,
+            "max": 420
+        },
+        "recolte": {
+            "min": 420,
+            "max": 480
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 45
+        }
+    },
+    "fenouil": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "curry": {
+        "semence": {
+            "min": 120,
+            "max": 150
+        },
+        "croissance": {
+            "min": 240,
+            "max": 300
+        },
+        "recolte": {
+            "min": 300,
+            "max": 360
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "graine-de-moutarde": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "asafoetida": {
+        "semence": {
+            "min": 180,
+            "max": 210
+        },
+        "croissance": {
+            "min": 360,
+            "max": 420
+        },
+        "recolte": {
+            "min": 420,
+            "max": 480
+        },
+        "conditionnement": {
+            "min": 30,
+            "max": 45
+        }
+    },
+    "sumac": {
+        "semence": {
+            "min": 150,
+            "max": 180
+        },
+        "croissance": {
+            "min": 180,
+            "max": 210
+        },
+        "recolte": {
+            "min": 210,
+            "max": 240
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "ajowan": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "shiso": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "sésame": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "moutarde": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "safran": {
+        "semence": {
+            "min": 240,
+            "max": 300
+        },
+        "croissance": {
+            "min": 300,
+            "max": 360
+        },
+        "recolte": {
+            "min": 360,
+            "max": 420
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "carvi": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "aneth": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "romarin": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "thym": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "basilic": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "menthe": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "persil": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "ciboulette": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "origan": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "sauge": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "marjolaine": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "piment-de-cayenne": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "curry-leaves": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "combava": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "curcuma-longa": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 210,
+            "max": 270
+        },
+        "recolte": {
+            "min": 270,
+            "max": 330
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "poivre-long": {
+        "semence": {
+            "min": 180,
+            "max": 210
+        },
+        "croissance": {
+            "min": 300,
+            "max": 360
+        },
+        "recolte": {
+            "min": 360,
+            "max": 420
+        },
+        "conditionnement": {
+            "min": 21,
+            "max": 30
+        }
+    },
+    "wasabi": {
+        "semence": {
+            "min": 120,
+            "max": 150
+        },
+        "croissance": {
+            "min": 180,
+            "max": 210
+        },
+        "recolte": {
+            "min": 210,
+            "max": 240
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "baies-de-goji": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 180,
+            "max": 210
+        },
+        "recolte": {
+            "min": 210,
+            "max": 240
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "poivre-de-sichuan": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "sumac-de-corse": {
+        "semence": {
+            "min": 120,
+            "max": 150
+        },
+        "croissance": {
+            "min": 150,
+            "max": 180
+        },
+        "recolte": {
+            "min": 180,
+            "max": 210
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "oignon": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "tomate": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "carotte": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "mais": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 75,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "riz": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "millet": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "sorgho": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "ble": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "orge": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "fonio": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "teff": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 75,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "avoine": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "sorgho-sucre": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "quinoa": {
+        "semence": {
+            "min": 10,
+            "max": 14
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "fonio-blanc": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "epeautre": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "banane": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 270,
+            "max": 365
+        },
+        "recolte": {
+            "min": 365,
+            "max": 456
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "pomme": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 180,
+            "max": 240
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "orange": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 240,
+            "max": 365
+        },
+        "recolte": {
+            "min": 365,
+            "max": 456
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "mangue": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 365,
+            "max": 456
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "ananas": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 365,
+            "max": 456
+        },
+        "recolte": {
+            "min": 540,
+            "max": 730
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "papaye": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 240,
+            "max": 300
+        },
+        "recolte": {
+            "min": 365,
+            "max": 456
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "citron": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 180,
+            "max": 240
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "fraise": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "cerise": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "raisin": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 300
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "pastèque": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "avocat": {
+        "semence": {
+          "min": 30,
+          "max": 60
+        },
+        "croissance": {
+          "min": 365,
+          "max": 730
+        },
+        "recolte": {
+          "min": 730,
+          "max": 1095
+        },
+        "conditionnement": {
+          "min": 7,
+          "max": 14
+        }
+      },
+    "grenade": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 240,
+            "max": 300
+        },
+        "recolte": {
+            "min": 365,
+            "max": 456
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "goyave": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 300
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "kiwi": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 365,
+            "max": 456
+        },
+        "recolte": {
+            "min": 540,
+            "max": 730
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "abricot": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 365,
+            "max": 456
+        },
+        "recolte": {
+            "min": 540,
+            "max": 730
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "mûre": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "myrtille": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "fruit de la passion": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 180,
+            "max": 240
+        },
+        "recolte": {
+            "min": 240,
+            "max": 300
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "prune": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 365,
+            "max": 456
+        },
+        "recolte": {
+            "min": 540,
+            "max": 730
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "nèfle": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 365,
+            "max": 456
+        },
+        "recolte": {
+            "min": 540,
+            "max": 730
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "amande": {
+        "semence": {
+            "min": 0,
+            "max": 0
+        },
+        "croissance": {
+            "min": 365,
+            "max": 456
+        },
+        "recolte": {
+            "min": 540,
+            "max": 730
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "salade": {
+        "semence": {
+            "min": 7,
+            "max": 14
+        },
+        "croissance": {
+            "min": 30,
+            "max": 45
+        },
+        "recolte": {
+            "min": 45,
+            "max": 60
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "chou-fleur": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "chou vert": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "chou rouge": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "chou de Milan": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "chou de Savoie": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "poivron": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "aubergine": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "chou": {
+        "semence": {
+            "min": 14,
+            "max": 21
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "laitue": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 30,
+            "max": 60
+        },
+        "recolte": {
+            "min": 60,
+            "max": 90
+        },
+        "conditionnement": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    "courgette": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "concombre": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "amarante": {
+        "semence": {
+            "min": 7,
+            "max": 10
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "haricot blanc": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "haricot rouge": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "arachide": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "petits pois": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "feuille de manioc": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "feuille de courge": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "oseille": {
+        "semence": {
+            "min": 30,
+            "max": 60
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "canne à sucre": {
+        "semence": {
+            "min": 240,
+            "max": 270
+        },
+        "croissance": {
+            "min": 270,
+            "max": 300
+        },
+        "recolte": {
+            "min": 360,
+            "max": 390
+        },
+        "conditionnement": {
+            "min": 14,
+            "max": 21
+        }
+    },
+    "épinard": {
+        "semence": {
+            "min": 30,
+            "max": 60
+        },
+        "croissance": {
+            "min": 60,
+            "max": 90
+        },
+        "recolte": {
+            "min": 90,
+            "max": 120
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "ail": {
+        "semence": {
+            "min": 90,
+            "max": 120
+        },
+        "croissance": {
+            "min": 120,
+            "max": 150
+        },
+        "recolte": {
+            "min": 150,
+            "max": 180
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "gombo": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "morelle": {
+        "semence": {
+            "min": 60,
+            "max": 90
+        },
+        "croissance": {
+            "min": 90,
+            "max": 120
+        },
+        "recolte": {
+            "min": 120,
+            "max": 150
+        },
+        "conditionnement": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    "fougère": {
+        "semence": {
+          "min": 30,
+          "max": 60
+        },
+        "croissance": {
+          "min": 60,
+          "max": 90
+        },
+        "recolte": {
+          "min": 90,
+          "max": 120
+        },
+        "conditionnement": {
+          "min": 7,
+          "max": 14
+        }
+    }
+}
