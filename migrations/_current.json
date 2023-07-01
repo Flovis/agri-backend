@@ -496,25 +496,25 @@
                     "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "dateDebu": {
-                    "field": "dateDebu",
-                    "seqType": "Sequelize.DATE"
+                "dateDebut": {
+                    "field": "dateDebut",
+                    "seqType": "Sequelize.DATEONLY"
                 },
-                "semmence": {
-                    "field": "semmence",
-                    "seqType": "Sequelize.DATE"
+                "semence": {
+                    "field": "semence",
+                    "seqType": "Sequelize.DATEONLY"
                 },
                 "croissance": {
                     "field": "croissance",
-                    "seqType": "Sequelize.DATE"
+                    "seqType": "Sequelize.DATEONLY"
                 },
                 "recolte": {
                     "field": "recolte",
-                    "seqType": "Sequelize.DATE"
+                    "seqType": "Sequelize.DATEONLY"
                 },
-                "conditionnement": {
-                    "field": "conditionnement",
-                    "seqType": "Sequelize.DATE"
+                "condition": {
+                    "field": "condition",
+                    "seqType": "Sequelize.DATEONLY"
                 },
                 "user_id": {
                     "field": "user_id",
@@ -942,6 +942,6 @@
     },
     "path": "/home/flo/Documents/agri/agri-backend/migrations/_current.json",
     "backupPath": "/home/flo/Documents/agri/agri-backend/migrations/_current_bak.json",
-    "exists": true,
-    "revision": 2
+    "exists": false,
+    "revision": 1
 }

@@ -19,11 +19,11 @@ module.exports = (sequelize, DataTypes) => {
     }
     PlanProduction.init(
         {
-            dateDebu: DataTypes.DATE,
-            semmence: DataTypes.DATE,
-            croissance: DataTypes.DATE,
-            recolte: DataTypes.DATE,
-            conditionnement: DataTypes.DATE,
+            dateDebut: DataTypes.DATEONLY,
+            semence: DataTypes.DATEONLY,
+            croissance: DataTypes.DATEONLY,
+            recolte: DataTypes.DATEONLY,
+            condition: DataTypes.DATEONLY,
             user_id: DataTypes.INTEGER,
             product_id: DataTypes.INTEGER,
         },
