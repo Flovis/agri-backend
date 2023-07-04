@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
             croissance: DataTypes.DATEONLY,
             recolte: DataTypes.DATEONLY,
             condition: DataTypes.DATEONLY,
+            status:DataTypes.INTEGER,
             user_id: DataTypes.INTEGER,
             product_id: DataTypes.INTEGER,
         },

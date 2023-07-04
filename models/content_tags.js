@@ -11,17 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Content_Tags.belongsTo(models.Contents, {
-        foreignKey: "content_id"
-      })
       Content_Tags.belongsTo(models.Tags, {
-        foreignKey: "tag_id"
+        foreignKey: "TagId"
+      })
+      Content_Tags.belongsTo(models.Contents, {
+        foreignKey: "ContentId"
       })
     }
   }
   Content_Tags.init({
-    content_id: DataTypes.INTEGER,
-    tag_id: DataTypes.INTEGER
+
   }, {
     sequelize,
     modelName: 'Content_Tags',

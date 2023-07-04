@@ -1,38 +1,41 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
-  class Contents extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
-      Contents.belongsTo(models.User, {
-        foreignKey:"author_id"
+    class Contents extends Model {
+        /**
+         * Helper method for defining associations.
+         * This method is not a part of Sequelize lifecycle.
+         * The `models/index` file will call this method automatically.
+         */
+        static associate(models) {
+            // define association here
 
-      })
-      Contents.belongsTo(models.Content_Category, {
-        foreignKey:"category_id"
-
-      })
-      Contents.hasMany(models.Content_Tags);
-      Contents.hasOne(models.Translated_content);
-      Contents.hasMany(models.Audience);
-
-
+            Contents.hasOne(models.Configs);
+            Contents.hasMany(models.Content_Tags);
+            Contents.belongsTo(models.Content_Category, {
+                foreignKey: "ContentCategoryId",
+            });
+            Contents.belongsTo(models.Languages, {
+                foreignKey: "LanguageId",
+            });
+            Contents.belongsTo(models.Cycles, {
+                foreignKey: "CycleId",
+            });
+            Contents.belongsTo(models.Products, {
+                foreignKey: "ProductId",
+            });
+        }
     }
-  }
-  Contents.init({
-    canal: DataTypes.STRING,
-    author_id: DataTypes.INTEGER,
-    category_id: DataTypes.INTEGER
-  }, {
-    sequelize,
-    modelName: 'Contents',
-  });
-  return Contents;
+    Contents.init(
+        {
+            titre: DataTypes.STRING,
+            file: DataTypes.STRING,
+            description: DataTypes.STRING,
+        },
+        {
+            sequelize,
+            modelName: "Contents",
+        }
+    );
+    return Contents;
 };
