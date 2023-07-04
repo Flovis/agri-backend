@@ -21,17 +21,6 @@
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "id_content": {
-                    "field": "id_content",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Contents",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
-                },
                 "id_organisation": {
                     "field": "id_organisation",
                     "allowNull": true,
@@ -64,17 +53,6 @@
                     "field": "updatedAt",
                     "seqType": "Sequelize.DATE"
                 },
-                "ContentId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Contents",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "ContentId",
-                    "seqType": "Sequelize.INTEGER"
-                },
                 "LocalisationId": {
                     "allowNull": true,
                     "references": {
@@ -106,6 +84,66 @@
                     "onDelete": "SET NULL",
                     "onUpdate": "CASCADE",
                     "field": "ProductId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Configs": {
+            "tableName": "Configs",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "canal": {
+                    "field": "canal",
+                    "seqType": "Sequelize.STRING"
+                },
+                "idContent": {
+                    "field": "idContent",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Contents",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "ContentCategoryId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Content_Categories",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "ContentCategoryId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ContentId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Contents",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "ContentId",
                     "seqType": "Sequelize.INTEGER"
                 }
             },
@@ -148,28 +186,6 @@
                     "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "content_id": {
-                    "field": "content_id",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Contents",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
-                },
-                "tag_id": {
-                    "field": "tag_id",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Tags",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
-                },
                 "createdAt": {
                     "allowNull": false,
                     "field": "createdAt",
@@ -180,17 +196,6 @@
                     "field": "updatedAt",
                     "seqType": "Sequelize.DATE"
                 },
-                "ContentId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Contents",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "ContentId",
-                    "seqType": "Sequelize.INTEGER"
-                },
                 "TagId": {
                     "allowNull": true,
                     "references": {
@@ -200,6 +205,17 @@
                     "onDelete": "SET NULL",
                     "onUpdate": "CASCADE",
                     "field": "TagId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ContentId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Contents",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "ContentId",
                     "seqType": "Sequelize.INTEGER"
                 }
             },
@@ -215,31 +231,17 @@
                     "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "canal": {
-                    "field": "canal",
+                "titre": {
+                    "field": "titre",
                     "seqType": "Sequelize.STRING"
                 },
-                "author_id": {
-                    "field": "author_id",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Users",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
+                "file": {
+                    "field": "file",
+                    "seqType": "Sequelize.STRING"
                 },
-                "category_id": {
-                    "field": "category_id",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Content_Categories",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
+                "description": {
+                    "field": "description",
+                    "seqType": "Sequelize.STRING"
                 },
                 "createdAt": {
                     "allowNull": false,
@@ -262,16 +264,65 @@
                     "field": "ContentCategoryId",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "UserId": {
+                "LanguageId": {
                     "allowNull": true,
                     "references": {
-                        "model": "Users",
+                        "model": "Languages",
                         "key": "id"
                     },
                     "onDelete": "SET NULL",
                     "onUpdate": "CASCADE",
-                    "field": "UserId",
+                    "field": "LanguageId",
                     "seqType": "Sequelize.INTEGER"
+                },
+                "CycleId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Cycles",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "CycleId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ProductId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "Products",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "ProductId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        },
+        "Cycles": {
+            "tableName": "Cycles",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "name": {
+                    "field": "name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
                 }
             },
             "indexes": []
@@ -496,25 +547,29 @@
                     "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "dateDebu": {
-                    "field": "dateDebu",
-                    "seqType": "Sequelize.DATE"
+                "dateDebut": {
+                    "field": "dateDebut",
+                    "seqType": "Sequelize.DATEONLY"
                 },
-                "semmence": {
-                    "field": "semmence",
-                    "seqType": "Sequelize.DATE"
+                "semence": {
+                    "field": "semence",
+                    "seqType": "Sequelize.DATEONLY"
                 },
                 "croissance": {
                     "field": "croissance",
-                    "seqType": "Sequelize.DATE"
+                    "seqType": "Sequelize.DATEONLY"
                 },
                 "recolte": {
                     "field": "recolte",
-                    "seqType": "Sequelize.DATE"
+                    "seqType": "Sequelize.DATEONLY"
                 },
-                "conditionnement": {
-                    "field": "conditionnement",
-                    "seqType": "Sequelize.DATE"
+                "condition": {
+                    "field": "condition",
+                    "seqType": "Sequelize.DATEONLY"
+                },
+                "status": {
+                    "field": "status",
+                    "seqType": "Sequelize.INTEGER"
                 },
                 "user_id": {
                     "field": "user_id",
@@ -688,81 +743,6 @@
                     "allowNull": false,
                     "field": "updatedAt",
                     "seqType": "Sequelize.DATE"
-                }
-            },
-            "indexes": []
-        },
-        "Translated_contents": {
-            "tableName": "Translated_contents",
-            "schema": {
-                "id": {
-                    "allowNull": false,
-                    "primaryKey": true,
-                    "autoIncrement": true,
-                    "field": "id",
-                    "seqType": "Sequelize.INTEGER"
-                },
-                "content_id": {
-                    "field": "content_id",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Contents",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
-                },
-                "title": {
-                    "field": "title",
-                    "seqType": "Sequelize.STRING"
-                },
-                "content": {
-                    "field": "content",
-                    "seqType": "Sequelize.STRING"
-                },
-                "id_language": {
-                    "field": "id_language",
-                    "allowNull": true,
-                    "references": {
-                        "model": "Languages",
-                        "key": "id"
-                    },
-                    "onDelete": "NO ACTION",
-                    "onUpdate": "CASCADE",
-                    "seqType": "Sequelize.INTEGER"
-                },
-                "createdAt": {
-                    "allowNull": false,
-                    "field": "createdAt",
-                    "seqType": "Sequelize.DATE"
-                },
-                "updatedAt": {
-                    "allowNull": false,
-                    "field": "updatedAt",
-                    "seqType": "Sequelize.DATE"
-                },
-                "ContentId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Contents",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "ContentId",
-                    "seqType": "Sequelize.INTEGER"
-                },
-                "LanguageId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Languages",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "LanguageId",
-                    "seqType": "Sequelize.INTEGER"
                 }
             },
             "indexes": []
@@ -943,5 +923,5 @@
     "path": "/home/flo/Documents/agri/agri-backend/migrations/_current.json",
     "backupPath": "/home/flo/Documents/agri/agri-backend/migrations/_current_bak.json",
     "exists": true,
-    "revision": 2
+    "revision": 4
 }
