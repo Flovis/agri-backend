@@ -1,8 +1,9 @@
 const db = require("../models/index");
-const {io} = require("../App")
-
+const { getIo } = require("../socket");
+const { sendMessage } = require("./SendMessage");
 
 const addProduct = async (req, res) => {
+    const io = getIo();
     let productID;
     const {
         userId,
@@ -53,14 +54,24 @@ const addProduct = async (req, res) => {
                     ],
                 });
                 if (data) {
+                    // console.log(io);
+                    // console.log(io.emit());
                     if (io && io.emit) {
                         io.emit("NouveauPlan", {
+                            idUser: data.User?.id,
                             username: data.User?.username,
+                            phone: data.User?.phone,
                             id_organisation: data.User?.id_organisation,
                             productName: productName,
                             dateDebut: semenceDate,
                         });
+                    } else {
+                        console.log("impossible emit");
                     }
+                    sendMessage(
+                        ["+243824092951"],
+                        `Bounjour ${data.User?.username}, vous avez ajouté le produit ${productName} au plan de production. Vous recevrez constament des conseilles pratiques.`
+                    );
                     return res.status(200).json({
                         success: true,
                         message:
@@ -92,15 +103,21 @@ const addProduct = async (req, res) => {
 };
 
 const displayProducts = async (req, res) => {
+    const io = getIo();
+    // console.log("flowbac", io);
     const id = parseInt(req.params.id, 10);
-    console.log(id);
+
+    io.emit("Test", "aime");
+    io.on("Ok", (msg) => {
+        console.log(msg);
+    });
     try {
         const productionPlan = await db.PlanProduction.findAll({
             where: { user_id: id },
             include: { model: db.Products },
             order: [["id", "ASC"]],
         });
-        console.log(productionPlan.length);
+        // console.log(productionPlan.length);
         if (productionPlan) {
             if (productionPlan.length > 0) {
                 return res.status(200).json({

@@ -2,8 +2,11 @@ const express = require("express");
 const router = express.Router();
 const { login } = require("../Controllers/authenticate");
 const { productData } = require("../Controllers/productData");
-const { addProduct, displayProducts } = require("../Controllers/PlanProduction");
-const { sendtoAllUsers } = require("../Controllers/AllUsersMessages");
+const {
+    addProduct,
+    displayProducts,
+} = require("../Controllers/PlanProduction");
+const { sendtoAllUsers } = require("../Controllers/SendMessage");
 const { addContents, displayContents } = require("../Controllers/Contents");
 const { displayLanguages } = require("../Controllers/displayLanguage");
 const upload = require("../Middleware/upload");
@@ -24,6 +27,5 @@ router.get("/languages", displayLanguages);
 //Contents
 router.post("/addContents", upload.single("file"), addContents);
 router.get("/getContents/:category", displayContents);
-
 
 module.exports = router;
