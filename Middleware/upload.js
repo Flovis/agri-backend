@@ -15,6 +15,10 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, callback) => {
         const name = file.originalname.split(" ").join("_");
+        // const fileName = file.originalname;
+        // const extension = fileName
+        //     .substring(fileName.lastIndexOf(".") + 1)
+        //     .toLowerCase();
         const extension = mimeTypes.extension(file.mimetype);
         callback(null, name + "_" + Date.now() + "." + extension);
         console.log(req.file);
@@ -22,7 +26,7 @@ const storage = multer.diskStorage({
 });
 // const fileFilter = (req, file, callback) => {
 //     const category = req.body.category.toLowerCase();
-//     if (category == "video" || category == "audio") {
+//     if (category == "audio") {
 //         if (file.mimetype.startsWith(`${category}/`)) {
 //             callback(null, true);
 //         } else {

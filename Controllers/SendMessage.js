@@ -9,8 +9,8 @@ const sendtoAllUsers = async (req, res) => {
 
     const client = twilio(SID, TOKEN);
     const message = `Bojour  est um message au test au num: de la part de agriTech. Flo`;
-    console.log(message);
-    console.log(client.messages);
+    // console.log(message);
+    // console.log(client.messages);
 
     try {
         const response = client.messages

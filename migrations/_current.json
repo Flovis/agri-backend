@@ -239,9 +239,17 @@
                     "field": "file",
                     "seqType": "Sequelize.STRING"
                 },
+                "link": {
+                    "field": "link",
+                    "seqType": "Sequelize.STRING"
+                },
                 "description": {
                     "field": "description",
                     "seqType": "Sequelize.STRING"
+                },
+                "contentText": {
+                    "field": "contentText",
+                    "seqType": "Sequelize.TEXT"
                 },
                 "createdAt": {
                     "allowNull": false,
@@ -923,5 +931,5 @@
     "path": "/home/flo/Documents/agri/agri-backend/migrations/_current.json",
     "backupPath": "/home/flo/Documents/agri/agri-backend/migrations/_current_bak.json",
     "exists": true,
-    "revision": 4
+    "revision": 6
 }

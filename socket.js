@@ -12,12 +12,12 @@ const makeIo = (server) => {
     io.on("connection", (socket) => {
         console.log("client connecté :", socket.id);
 
-        socket.on("ok", (msg) => {
-            console.log(msg);
-            console.log("==================");
-        });
+        // socket.on("ok", (msg) => {
+        //     console.log(msg);
+        //     console.log("==================");
+        // });
 
-        socket.emit("Test", "Fo");
+        // socket.emit("Test", "Fo");
 
         socket.on("disconnect", () => {
             console.log("client déconnecté, ID :", socket.id);

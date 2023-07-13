@@ -1,9 +1,11 @@
 const db = require("../models/index");
 const { getIo } = require("../socket");
 const { sendMessage } = require("./SendMessage");
+const { cron } = require("./CronProduction");
 
 const addProduct = async (req, res) => {
     const io = getIo();
+    cron(io);
     let productID;
     const {
         userId,
@@ -56,6 +58,7 @@ const addProduct = async (req, res) => {
                 if (data) {
                     // console.log(io);
                     // console.log(io.emit());
+                    cron(io);
                     if (io && io.emit) {
                         io.emit("NouveauPlan", {
                             idUser: data.User?.id,
@@ -68,10 +71,10 @@ const addProduct = async (req, res) => {
                     } else {
                         console.log("impossible emit");
                     }
-                    sendMessage(
-                        ["+243824092951"],
-                        `Bounjour ${data.User?.username}, vous avez ajouté le produit ${productName} au plan de production. Vous recevrez constament des conseilles pratiques.`
-                    );
+                    // sendMessage(
+                    //     ["+243824092951"],
+                    //     `Bounjour ${data.User?.username}, vous avez ajouté le produit ${productName} au plan de production. Vous recevrez constament des conseilles pratiques.`
+                    // );
                     return res.status(200).json({
                         success: true,
                         message:
