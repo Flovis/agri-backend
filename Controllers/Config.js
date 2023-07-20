@@ -1,29 +1,92 @@
 const db = require("../models/index");
 
-const saveProductionConfig = async (req, res) => {
-    const { groupe, cycle, jour, canal, condition, message, idContent } = req.body;
-    let cycleID;
+const saveMeteoConfig = async (req, res) => {
+    const {
+        cycle,
+        jour,
+        canal,
+        productName,
+        condition,
+        message,
+        idContent,
+        idUser,
+        idOrganisation,
+    } = req.body;
+    let cycleId;
+    let productId;
+    let date;
 
-    try {
-        const data = await db.Cycles.findOne({
-            where: { name: cycle.toLowerCase() },
-            attributes: ["id"],
-        });
+    if (jour) {
+        date = dayToDate(jour.toLowerCase());
+    }
 
-        cycleID = data.id;
-
-        const date = dayToDate(jour.toLowerCase());
-        console.log(cycleID)
-        console.log(date);
+    if (cycle) {
         try {
-            const response = await db.ConfigMeteo
+            const cycle = await db.Cycles.findOne({
+                where: { name: cycle.toLowerCase() },
+                attributes: ["id"],
+            });
+            cycleId = cycle.id;
         } catch (error) {
-            
+            return res.status(400).json({
+                message: "Error",
+            });
         }
-    } catch (error) {
-        return res.status(400).json({
-            message: "Error",
-        });
+    }
+
+    if (productName) {
+        try {
+            const product = await db.Products.findOne({
+                where: { name: productName.toLowerCase() },
+                attributes: {},
+            });
+            productId = product.id;
+        } catch (error) {
+            return res.status(400).json({
+                error,
+            });
+        }
+    }
+    if (productId && cycleId) {
+        if(date && canal && condition && message){
+            try {
+                const response = await db.ConfigMeteo.create({
+                    UserId: idUser,
+                    ContentId: idContent,
+                    ProductId: productId,
+                    CycleId: cycleId,
+                    OrganisationId: idOrganisation,
+                    date,
+                    canal: canal,
+                    condition,
+                    message
+                });
+            } catch (error) {}
+        }else{
+            return res.status(200).json({
+                message: "Tous les champs sont requis"
+            })
+        }
+        
+    }else{
+        if(date && canal && condition && message){
+            try {
+                const response = await db.ConfigMeteo.create({
+                    UserId: idUser,
+                    ContentId: idContent,
+                    OrganisationId: idOrganisation,
+                    date,
+                    canal: canal,
+                    condition,
+                    message
+                });
+            } catch (error) {}
+        }else{
+            return res.status(200).json({
+                message: "Tous les champs sont requis"
+            })
+        }
+          
     }
 };
 
@@ -58,4 +121,4 @@ const dayToDate = (dayOfWeek) => {
     return formattedDate;
 };
 
-module.exports = { saveProductionConfig };
+module.exports = { saveMeteoConfig };

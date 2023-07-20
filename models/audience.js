@@ -10,21 +10,21 @@ module.exports = (sequelize, DataTypes) => {
         static associate(models) {
             // define association here
             Audience.belongsTo(models.Products, {
-                foreignKey: "id_product",
+                foreignKey: "ProductId",
             });
             Audience.belongsTo(models.Organisations, {
-                foreignKey: "id_organisation",
+                foreignKey: "OrganisationId",
             });
             Audience.belongsTo(models.Localisation, {
-                foreignKey: "id_localisation",
+                foreignKey: "LocalisationId",
             });
         }
     }
     Audience.init(
         {
-            id_product: DataTypes.INTEGER,
-            id_organisation: DataTypes.INTEGER,
-            id_localisation: DataTypes.INTEGER,
+            ProductId: DataTypes.INTEGER,
+            OrganisationId: DataTypes.INTEGER,
+            LocalisationId: DataTypes.INTEGER,
         },
         {
             sequelize,

@@ -13,8 +13,7 @@ module.exports = (sequelize, DataTypes) => {
             Organisations.hasMany(models.Farmes);
             Organisations.hasMany(models.Audience);
             Organisations.hasMany(models.User);
-
-
+            Organisations.hasMany(models.ConfigMeteo);
         }
     }
     Organisations.init(

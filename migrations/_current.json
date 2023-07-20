@@ -10,8 +10,8 @@
                     "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "id_product": {
-                    "field": "id_product",
+                "ProductId": {
+                    "field": "ProductId",
                     "allowNull": true,
                     "references": {
                         "model": "Products",
@@ -21,8 +21,8 @@
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "id_organisation": {
-                    "field": "id_organisation",
+                "OrganisationId": {
+                    "field": "OrganisationId",
                     "allowNull": true,
                     "references": {
                         "model": "Organisations",
@@ -32,8 +32,8 @@
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "id_localisation": {
-                    "field": "id_localisation",
+                "LocalisationId": {
+                    "field": "LocalisationId",
                     "allowNull": true,
                     "references": {
                         "model": "Localisations",
@@ -52,39 +52,100 @@
                     "allowNull": false,
                     "field": "updatedAt",
                     "seqType": "Sequelize.DATE"
-                },
-                "LocalisationId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Localisations",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "LocalisationId",
+                }
+            },
+            "indexes": []
+        },
+        "ConfigMeteos": {
+            "tableName": "ConfigMeteos",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "OrganisationId": {
+                "UserId": {
+                    "field": "UserId",
                     "allowNull": true,
                     "references": {
-                        "model": "Organisations",
+                        "model": "Users",
                         "key": "id"
                     },
-                    "onDelete": "SET NULL",
+                    "onDelete": "NO ACTION",
                     "onUpdate": "CASCADE",
-                    "field": "OrganisationId",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ContentId": {
+                    "field": "ContentId",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Contents",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
                 "ProductId": {
+                    "field": "ProductId",
                     "allowNull": true,
                     "references": {
                         "model": "Products",
                         "key": "id"
                     },
-                    "onDelete": "SET NULL",
+                    "onDelete": "NO ACTION",
                     "onUpdate": "CASCADE",
-                    "field": "ProductId",
                     "seqType": "Sequelize.INTEGER"
+                },
+                "CycleId": {
+                    "field": "CycleId",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Cycles",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "OrganisationId": {
+                    "field": "OrganisationId",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Organisations",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "date": {
+                    "field": "date",
+                    "seqType": "Sequelize.DATE"
+                },
+                "canal": {
+                    "field": "canal",
+                    "seqType": "Sequelize.STRING"
+                },
+                "condition": {
+                    "field": "condition",
+                    "seqType": "Sequelize.STRING"
+                },
+                "message": {
+                    "field": "message",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
                 }
             },
             "indexes": []

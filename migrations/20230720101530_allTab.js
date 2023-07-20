@@ -11,11 +11,12 @@ const Sequelize = require("sequelize");
  * createTable() => "Tags", deps: []
  * createTable() => "Users", deps: [Organisations, Organisations]
  * createTable() => "Contents", deps: [Content_Categories, Languages, Cycles, Products]
+ * createTable() => "Localisations", deps: [Users]
  * createTable() => "ConfigProductions", deps: [Contents, Products, Cycles]
  * createTable() => "Configs", deps: [Contents, Content_Categories, Contents]
  * createTable() => "Content_Tags", deps: [Tags, Contents]
- * createTable() => "Localisations", deps: [Users]
- * createTable() => "Audiences", deps: [Products, Organisations, Localisations, Localisations, Organisations, Products]
+ * createTable() => "ConfigMeteos", deps: [Users, Contents, Products, Cycles, Organisations]
+ * createTable() => "Audiences", deps: [Products, Organisations, Localisations]
  * createTable() => "Farmes", deps: [Users, Organisations, Organisations, Users]
  * createTable() => "Roles", deps: [Organisations, Organisations]
  * createTable() => "PlanProductions", deps: [Users, Products, Products, Users]
@@ -26,7 +27,7 @@ const Sequelize = require("sequelize");
 const info = {
   revision: 1,
   name: "allTab",
-  created: "2023-07-19T09:11:56.511Z",
+  created: "2023-07-20T10:15:30.453Z",
   comment: "",
 };
 
@@ -322,6 +323,43 @@ const migrationCommands = (transaction) => [
   {
     fn: "createTable",
     params: [
+      "Localisations",
+      {
+        id: {
+          type: Sequelize.INTEGER,
+          field: "id",
+          autoIncrement: true,
+          primaryKey: true,
+          allowNull: false,
+        },
+        name: { type: Sequelize.STRING, field: "name" },
+        latitude: { type: Sequelize.STRING, field: "latitude" },
+        longitude: { type: Sequelize.STRING, field: "longitude" },
+        UserId: {
+          type: Sequelize.INTEGER,
+          onUpdate: "CASCADE",
+          onDelete: "NO ACTION",
+          references: { model: "Users", key: "id" },
+          allowNull: true,
+          field: "UserId",
+        },
+        createdAt: {
+          type: Sequelize.DATE,
+          field: "createdAt",
+          allowNull: false,
+        },
+        updatedAt: {
+          type: Sequelize.DATE,
+          field: "updatedAt",
+          allowNull: false,
+        },
+      },
+      { transaction },
+    ],
+  },
+  {
+    fn: "createTable",
+    params: [
       "ConfigProductions",
       {
         id: {
@@ -465,7 +503,7 @@ const migrationCommands = (transaction) => [
   {
     fn: "createTable",
     params: [
-      "Localisations",
+      "ConfigMeteos",
       {
         id: {
           type: Sequelize.INTEGER,
@@ -474,9 +512,6 @@ const migrationCommands = (transaction) => [
           primaryKey: true,
           allowNull: false,
         },
-        name: { type: Sequelize.STRING, field: "name" },
-        latitude: { type: Sequelize.STRING, field: "latitude" },
-        longitude: { type: Sequelize.STRING, field: "longitude" },
         UserId: {
           type: Sequelize.INTEGER,
           onUpdate: "CASCADE",
@@ -485,6 +520,42 @@ const migrationCommands = (transaction) => [
           allowNull: true,
           field: "UserId",
         },
+        ContentId: {
+          type: Sequelize.INTEGER,
+          onUpdate: "CASCADE",
+          onDelete: "NO ACTION",
+          references: { model: "Contents", key: "id" },
+          allowNull: true,
+          field: "ContentId",
+        },
+        ProductId: {
+          type: Sequelize.INTEGER,
+          onUpdate: "CASCADE",
+          onDelete: "NO ACTION",
+          references: { model: "Products", key: "id" },
+          allowNull: true,
+          field: "ProductId",
+        },
+        CycleId: {
+          type: Sequelize.INTEGER,
+          onUpdate: "CASCADE",
+          onDelete: "NO ACTION",
+          references: { model: "Cycles", key: "id" },
+          allowNull: true,
+          field: "CycleId",
+        },
+        OrganisationId: {
+          type: Sequelize.INTEGER,
+          onUpdate: "CASCADE",
+          onDelete: "NO ACTION",
+          references: { model: "Organisations", key: "id" },
+          allowNull: true,
+          field: "OrganisationId",
+        },
+        date: { type: Sequelize.DATE, field: "date" },
+        canal: { type: Sequelize.STRING, field: "canal" },
+        condition: { type: Sequelize.STRING, field: "condition" },
+        message: { type: Sequelize.STRING, field: "message" },
         createdAt: {
           type: Sequelize.DATE,
           field: "createdAt",
@@ -511,29 +582,29 @@ const migrationCommands = (transaction) => [
           primaryKey: true,
           allowNull: false,
         },
-        id_product: {
+        ProductId: {
           type: Sequelize.INTEGER,
           onUpdate: "CASCADE",
           onDelete: "NO ACTION",
           references: { model: "Products", key: "id" },
           allowNull: true,
-          field: "id_product",
+          field: "ProductId",
         },
-        id_organisation: {
+        OrganisationId: {
           type: Sequelize.INTEGER,
           onUpdate: "CASCADE",
           onDelete: "NO ACTION",
           references: { model: "Organisations", key: "id" },
           allowNull: true,
-          field: "id_organisation",
+          field: "OrganisationId",
         },
-        id_localisation: {
+        LocalisationId: {
           type: Sequelize.INTEGER,
           onUpdate: "CASCADE",
           onDelete: "NO ACTION",
           references: { model: "Localisations", key: "id" },
           allowNull: true,
-          field: "id_localisation",
+          field: "LocalisationId",
         },
         createdAt: {
           type: Sequelize.DATE,
@@ -544,30 +615,6 @@ const migrationCommands = (transaction) => [
           type: Sequelize.DATE,
           field: "updatedAt",
           allowNull: false,
-        },
-        LocalisationId: {
-          type: Sequelize.INTEGER,
-          field: "LocalisationId",
-          onUpdate: "CASCADE",
-          onDelete: "SET NULL",
-          references: { model: "Localisations", key: "id" },
-          allowNull: true,
-        },
-        OrganisationId: {
-          type: Sequelize.INTEGER,
-          field: "OrganisationId",
-          onUpdate: "CASCADE",
-          onDelete: "SET NULL",
-          references: { model: "Organisations", key: "id" },
-          allowNull: true,
-        },
-        ProductId: {
-          type: Sequelize.INTEGER,
-          field: "ProductId",
-          onUpdate: "CASCADE",
-          onDelete: "SET NULL",
-          references: { model: "Products", key: "id" },
-          allowNull: true,
         },
       },
       { transaction },
@@ -792,6 +839,10 @@ const rollbackCommands = (transaction) => [
   {
     fn: "dropTable",
     params: ["Audiences", { transaction }],
+  },
+  {
+    fn: "dropTable",
+    params: ["ConfigMeteos", { transaction }],
   },
   {
     fn: "dropTable",
