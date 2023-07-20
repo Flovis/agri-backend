@@ -12,9 +12,6 @@ module.exports = (sequelize, DataTypes) => {
             Audience.belongsTo(models.Products, {
                 foreignKey: "id_product",
             });
-            Audience.belongsTo(models.Contents, {
-                foreignKey: "id_content",
-            });
             Audience.belongsTo(models.Organisations, {
                 foreignKey: "id_organisation",
             });
@@ -26,7 +23,6 @@ module.exports = (sequelize, DataTypes) => {
     Audience.init(
         {
             id_product: DataTypes.INTEGER,
-            id_content: DataTypes.INTEGER,
             id_organisation: DataTypes.INTEGER,
             id_localisation: DataTypes.INTEGER,
         },
