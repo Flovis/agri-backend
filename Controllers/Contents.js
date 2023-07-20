@@ -10,7 +10,7 @@ const addContents = async (req, res, next) => {
         category,
         description,
         link,
-        contentText
+        contentText,
     } = req.body;
     let categoryID;
     let languageID;
@@ -60,18 +60,11 @@ const addContents = async (req, res, next) => {
             //Create or found language
             try {
                 const languageFind = await db.Languages.findOne({
-                    where: { name: language },
+                    where: { name: language.toLowerCase() },
                 });
-                if (!languageFind) {
-                    const createLanguage = await db.Languages.create({
-                        name: language,
-                    });
-                    languageID = createLanguage.id;
-                    console.log("created", createLanguage.id);
-                } else {
-                    languageID = languageFind.id;
-                    console.log("find language", languageFind.id);
-                }
+
+                languageID = languageFind.id;
+                console.log("find language", languageFind.id);
             } catch (error) {
                 console.log(error);
                 res.status(400).json({
@@ -84,16 +77,9 @@ const addContents = async (req, res, next) => {
                 const cycleFind = await db.Cycles.findOne({
                     where: { name: cycle.toLowerCase() },
                 });
-                if (!cycleFind) {
-                    const createCycle = await db.Cycles.create({
-                        name: cycle.toLowerCase(),
-                    });
-                    cycleID = createCycle.id;
-                    console.log("created", createCycle.id);
-                } else {
-                    cycleID = cycleFind.id;
-                    console.log("find cycle", cycleFind.id);
-                }
+
+                cycleID = cycleFind.id;
+                console.log("find cycle", cycleFind.id);
             } catch (error) {
                 // console.log(error);
                 res.status(400).json({
@@ -154,7 +140,7 @@ const addContents = async (req, res, next) => {
                         CycleId: cycleID,
                         ProductId: productID,
                         LanguageId: languageID,
-                        link
+                        link,
                     });
 
                     if (createContent) {

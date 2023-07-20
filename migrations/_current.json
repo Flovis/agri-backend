@@ -89,6 +89,62 @@
             },
             "indexes": []
         },
+        "ConfigProductions": {
+            "tableName": "ConfigProductions",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ContentId": {
+                    "field": "ContentId",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Contents",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "ProductId": {
+                    "field": "ProductId",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Products",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "CycleId": {
+                    "field": "CycleId",
+                    "allowNull": true,
+                    "references": {
+                        "model": "Cycles",
+                        "key": "id"
+                    },
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
         "Configs": {
             "tableName": "Configs",
             "schema": {
@@ -463,16 +519,16 @@
                     "field": "name",
                     "seqType": "Sequelize.STRING"
                 },
-                "latitute": {
-                    "field": "latitute",
+                "latitude": {
+                    "field": "latitude",
                     "seqType": "Sequelize.STRING"
                 },
                 "longitude": {
                     "field": "longitude",
                     "seqType": "Sequelize.STRING"
                 },
-                "user_id": {
-                    "field": "user_id",
+                "UserId": {
+                    "field": "UserId",
                     "allowNull": true,
                     "references": {
                         "model": "Users",
@@ -491,17 +547,6 @@
                     "allowNull": false,
                     "field": "updatedAt",
                     "seqType": "Sequelize.DATE"
-                },
-                "UserId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Users",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "UserId",
-                    "seqType": "Sequelize.INTEGER"
                 }
             },
             "indexes": []
@@ -870,25 +915,25 @@
                     "field": "id",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "user_id": {
-                    "field": "user_id",
+                "UserId": {
+                    "field": "UserId",
                     "allowNull": true,
                     "references": {
                         "model": "Users",
                         "key": "id"
                     },
-                    "onDelete": "NO ACTION",
+                    "onDelete": "CASCADE",
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "role_id": {
-                    "field": "role_id",
+                "RoleId": {
+                    "field": "RoleId",
                     "allowNull": true,
                     "references": {
                         "model": "Roles",
                         "key": "id"
                     },
-                    "onDelete": "NO ACTION",
+                    "onDelete": "CASCADE",
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
@@ -901,28 +946,6 @@
                     "allowNull": false,
                     "field": "updatedAt",
                     "seqType": "Sequelize.DATE"
-                },
-                "RoleId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Roles",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "RoleId",
-                    "seqType": "Sequelize.INTEGER"
-                },
-                "UserId": {
-                    "allowNull": true,
-                    "references": {
-                        "model": "Users",
-                        "key": "id"
-                    },
-                    "onDelete": "SET NULL",
-                    "onUpdate": "CASCADE",
-                    "field": "UserId",
-                    "seqType": "Sequelize.INTEGER"
                 }
             },
             "indexes": []
@@ -930,6 +953,6 @@
     },
     "path": "/home/flo/Documents/agri/agri-backend/migrations/_current.json",
     "backupPath": "/home/flo/Documents/agri/agri-backend/migrations/_current_bak.json",
-    "exists": true,
-    "revision": 6
+    "exists": false,
+    "revision": 1
 }

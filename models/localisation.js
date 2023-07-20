@@ -10,17 +10,17 @@ module.exports = (sequelize, DataTypes) => {
         static associate(models) {
             // define association here
             Localisation.hasMany(models.Audience);
-            Localisation.belongsTo(models.User,{
-                foreignKey:"user_id"
-              })
+            Localisation.belongsTo(models.User, {
+                foreignKey: "UserId",
+            });
         }
     }
     Localisation.init(
         {
             name: DataTypes.STRING,
-            latitute: DataTypes.STRING,
+            latitude: DataTypes.STRING,
             longitude: DataTypes.STRING,
-            user_id: DataTypes.INTEGER,
+            UserId: DataTypes.INTEGER,
         },
         {
             sequelize,

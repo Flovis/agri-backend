@@ -1,0 +1,45 @@
+2023/07/18-22:03:30.838 2f57 Reusing MANIFEST /home/flo/Documents/agri/agri-backend/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/07/18-22:03:30.839 2f57 Recovering log #219
+2023/07/18-22:03:31.730 2f57 Reusing old log /home/flo/Documents/agri/agri-backend/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000219.log 
+2023/07/18-22:04:33.415 2f2a Level-0 table #230: started
+2023/07/18-22:04:33.702 2f2a Level-0 table #230: 1023144 bytes OK
+2023/07/18-22:04:33.706 2f2a Delete type=0 #219
+2023/07/18-22:04:33.778 2fb3 Compacting 1@1 + 7@2 files
+2023/07/18-22:04:34.402 2fb3 Generated table #231@1: 56962 keys, 2307961 bytes
+2023/07/18-22:04:34.735 2fb3 Generated table #232@1: 20812 keys, 2176147 bytes
+2023/07/18-22:04:35.052 2fb3 Generated table #233@1: 2033 keys, 2152450 bytes
+2023/07/18-22:04:35.350 2fb3 Generated table #234@1: 17011 keys, 2219386 bytes
+2023/07/18-22:04:35.757 2fb3 Generated table #235@1: 30541 keys, 2187918 bytes
+2023/07/18-22:04:36.537 2fb3 Generated table #236@1: 109555 keys, 2263575 bytes
+2023/07/18-22:04:36.633 2fb3 Generated table #237@1: 8424 keys, 199678 bytes
+2023/07/18-22:04:36.633 2fb3 Compacted 1@1 + 7@2 files => 13507115 bytes
+2023/07/18-22:04:36.640 2fb3 compacted to: files[ 0 0 7 0 0 0 0 ]
+2023/07/18-22:04:53.243 2f10 Level-0 table #239: started
+2023/07/18-22:04:53.356 2f10 Level-0 table #239: 1182411 bytes OK
+2023/07/18-22:04:53.361 2f10 Delete type=2 #221
+2023/07/18-22:04:53.361 2f10 Delete type=2 #222
+2023/07/18-22:04:53.361 2f10 Delete type=2 #223
+2023/07/18-22:04:53.361 2f10 Delete type=2 #226
+2023/07/18-22:04:53.361 2f10 Delete type=2 #225
+2023/07/18-22:04:53.362 2f10 Delete type=2 #230
+2023/07/18-22:04:53.362 2f10 Delete type=0 #229
+2023/07/18-22:04:53.362 2f10 Delete type=2 #224
+2023/07/18-22:04:53.362 2f10 Delete type=2 #227
+2023/07/18-22:04:53.419 2f10 Compacting 1@1 + 7@2 files
+2023/07/18-22:04:53.979 2f10 Generated table #240@1: 59390 keys, 2310733 bytes
+2023/07/18-22:04:54.323 2f10 Generated table #241@1: 23871 keys, 2184729 bytes
+2023/07/18-22:04:54.534 2f10 Generated table #242@1: 2011 keys, 2154197 bytes
+2023/07/18-22:04:54.804 2f10 Generated table #243@1: 14568 keys, 2206883 bytes
+2023/07/18-22:04:55.046 2f10 Generated table #244@1: 22317 keys, 2190914 bytes
+2023/07/18-22:04:55.566 2f10 Generated table #245@1: 109578 keys, 2261853 bytes
+2023/07/18-22:04:55.668 2f10 Generated table #246@1: 18851 keys, 417845 bytes
+2023/07/18-22:04:55.668 2f10 Compacted 1@1 + 7@2 files => 13727154 bytes
+2023/07/18-22:04:55.671 2f10 compacted to: files[ 0 0 7 0 0 0 0 ]
+2023/07/18-22:04:55.672 2f10 Delete type=2 #234
+2023/07/18-22:04:55.673 2f10 Delete type=2 #231
+2023/07/18-22:04:55.673 2f10 Delete type=2 #236
+2023/07/18-22:04:55.673 2f10 Delete type=2 #233
+2023/07/18-22:04:55.673 2f10 Delete type=2 #235
+2023/07/18-22:04:55.673 2f10 Delete type=2 #237
+2023/07/18-22:04:55.673 2f10 Delete type=2 #232
+2023/07/18-22:04:55.673 2f10 Delete type=2 #239

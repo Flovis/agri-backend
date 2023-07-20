@@ -4,7 +4,7 @@ const { Sequelize } = require("sequelize");
 const db = require("./models/index");
 const app = express();
 const { makeIo, getIo } = require("./socket");
-const { cron } = require("./Controllers/CronProduction");
+const { checkDate } = require("./Controllers/CheckDate");
 
 const cors = require("cors");
 // app.use(cors());
@@ -25,16 +25,15 @@ makeIo(server);
 
 const io = getIo();
 // console.log("kadea ",io);
-io.on("NouveauPlan", (data) => {
-    console.log("From cron", data);
-    console.log("IO", io)
-
-});
 
 app.use("/", router);
 
 server.listen(3500, () => {
     console.log("Server is running");
 });
+
+const intervalle = 24 * 60 * 60 * 1000;
+setInterval(checkDate, intervalle);
+checkDate();
 
 module.exports = server;

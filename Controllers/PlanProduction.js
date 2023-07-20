@@ -1,11 +1,12 @@
 const db = require("../models/index");
 const { getIo } = require("../socket");
-const { sendMessage } = require("./SendMessage");
-const { cron } = require("./CronProduction");
+const { sendWhatsappMsg } = require("./SendMessage");
+const { newProductMessage } = require("./Messages");
+
+const { userID, getID } = require("./authenticate");
 
 const addProduct = async (req, res) => {
     const io = getIo();
-    cron(io);
     let productID;
     const {
         userId,
@@ -39,6 +40,7 @@ const addProduct = async (req, res) => {
                 condition: conditionDate,
                 user_id: userId,
                 product_id: productID,
+                status: 1,
             });
             if (planAdded) {
                 const data = await db.PlanProduction.findOne({
@@ -58,7 +60,13 @@ const addProduct = async (req, res) => {
                 if (data) {
                     // console.log(io);
                     // console.log(io.emit());
-                    cron(io);
+                    const message = newProductMessage(
+                        data.User?.username,
+                        productName,
+                        semenceDate
+                    );
+                    sendWhatsappMsg(message, data.User?.phone_number);
+
                     if (io && io.emit) {
                         io.emit("NouveauPlan", {
                             idUser: data.User?.id,
@@ -71,10 +79,9 @@ const addProduct = async (req, res) => {
                     } else {
                         console.log("impossible emit");
                     }
-                    // sendMessage(
-                    //     ["+243824092951"],
-                    //     `Bounjour ${data.User?.username}, vous avez ajouté le produit ${productName} au plan de production. Vous recevrez constament des conseilles pratiques.`
-                    // );
+
+                    //send whatsapp
+
                     return res.status(200).json({
                         success: true,
                         message:
@@ -106,17 +113,15 @@ const addProduct = async (req, res) => {
 };
 
 const displayProducts = async (req, res) => {
+    // console.log(userID);
+    // console.log(getID);
     const io = getIo();
     // console.log("flowbac", io);
+    console.log(req.params)
     const id = parseInt(req.params.id, 10);
-
-    io.emit("Test", "aime");
-    io.on("Ok", (msg) => {
-        console.log(msg);
-    });
     try {
         const productionPlan = await db.PlanProduction.findAll({
-            where: { user_id: id },
+            where: { user_id: id, status: 1 },
             include: { model: db.Products },
             order: [["id", "ASC"]],
         });

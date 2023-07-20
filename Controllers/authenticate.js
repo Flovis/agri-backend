@@ -4,6 +4,8 @@ const User = require("../models/user");
 const db = require("../models/index");
 require("dotenv").config();
 
+let userID;
+
 const login = async (req, res, next) => {
     let token;
 
@@ -18,6 +20,7 @@ const login = async (req, res, next) => {
                 message: "Email ou mot de passe invalide",
             });
         }
+
         //comparaison des mots de passes
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
@@ -32,6 +35,11 @@ const login = async (req, res, next) => {
                 { userId: user.id, email: user.email },
                 process.env.JWT_SECRET
             );
+
+            userID = user.id;
+            const getUserID = () => {
+                return user.id;
+            };
         } catch (err) {
             return res.status(400).json({
                 succes: false,
@@ -42,10 +50,11 @@ const login = async (req, res, next) => {
         //Role
         try {
             const role = await db.User_Roles.findOne({
-                where: { user_id: user.id },
+                where: { UserId: user.id },
             });
             if (role) {
-                const roleId = role.role_id;
+                // console.log(role);
+                const roleId = role.RoleId;
                 res.status(200).json({
                     succes: true,
                     data: {
@@ -57,15 +66,24 @@ const login = async (req, res, next) => {
                         city: user.city,
                         role: roleId,
                         token: token,
+                        id_organisation: user.id_organisation,
                     },
                 });
             }
         } catch (error) {
-            console.log("Nothing");
+            console.log("Role error", error);
         }
     } catch (error) {
         res.status(400).json("Erreur de connexion");
     }
 };
 
-module.exports = { login };
+const getID = () => {
+    if (userID) {
+        return userID;
+    } else {
+        return console.log("impossible");
+    }
+};
+
+module.exports = { login, userID, getID };
