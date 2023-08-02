@@ -34,6 +34,6 @@ server.listen(3500, () => {
 
 const intervalle = 24 * 60 * 60 * 1000;
 setInterval(checkDate, intervalle);
-checkDate();
+// checkDate();
 
 module.exports = server;

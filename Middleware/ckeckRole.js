@@ -11,3 +11,9 @@ const checkRole = (allowedRole) => {
         }
     };
 };
+
+class Person{
+    constructor(){
+        this.Person = new Person()
+    }
+}

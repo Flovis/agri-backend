@@ -121,9 +121,17 @@
                     "onUpdate": "CASCADE",
                     "seqType": "Sequelize.INTEGER"
                 },
-                "date": {
-                    "field": "date",
-                    "seqType": "Sequelize.DATE"
+                "sendDate": {
+                    "field": "sendDate",
+                    "seqType": "Sequelize.DATEONLY"
+                },
+                "conditionDate": {
+                    "field": "conditionDate",
+                    "seqType": "Sequelize.DATEONLY"
+                },
+                "conditionDay": {
+                    "field": "conditionDay",
+                    "seqType": "Sequelize.STRING"
                 },
                 "canal": {
                     "field": "canal",

@@ -117,7 +117,7 @@ const displayProducts = async (req, res) => {
     // console.log(getID);
     const io = getIo();
     // console.log("flowbac", io);
-    console.log(req.params)
+    console.log(req.params);
     const id = parseInt(req.params.id, 10);
     try {
         const productionPlan = await db.PlanProduction.findAll({
@@ -146,5 +146,22 @@ const displayProducts = async (req, res) => {
         });
     }
 };
+const displayAllProductPlan = async (req, res) => {
+    try {
+        const data = await db.PlanProduction.findAll({
+            attributes: ["id"],
+            include: { model: db.Products, attributes: ["id", "name"] },
+        });
+        if (data) {
+            res.status(200).json({
+                data
+            })
+        }
+    } catch (error) {
+        return res.status(500).json({
+            error: "Impossible de recuperer les donnnees"
+        })
+    }
+};
 
-module.exports = { addProduct, displayProducts };
+module.exports = { addProduct, displayProducts, displayAllProductPlan};

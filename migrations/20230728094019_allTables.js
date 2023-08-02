@@ -26,8 +26,8 @@ const Sequelize = require("sequelize");
 
 const info = {
   revision: 1,
-  name: "allTab",
-  created: "2023-07-20T10:15:30.453Z",
+  name: "allTables",
+  created: "2023-07-28T09:40:19.313Z",
   comment: "",
 };
 
@@ -552,7 +552,9 @@ const migrationCommands = (transaction) => [
           allowNull: true,
           field: "OrganisationId",
         },
-        date: { type: Sequelize.DATE, field: "date" },
+        sendDate: { type: Sequelize.DATEONLY, field: "sendDate" },
+        conditionDate: { type: Sequelize.DATEONLY, field: "conditionDate" },
+        conditionDay: { type: Sequelize.STRING, field: "conditionDay" },
         canal: { type: Sequelize.STRING, field: "canal" },
         condition: { type: Sequelize.STRING, field: "condition" },
         message: { type: Sequelize.STRING, field: "message" },
